@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Articles - ArticleHub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a2e;
+            color: #fff;
+        }
+
+        header {
+            background: #16213e;
+            color: #fff;
+            text-align: center;
+            padding: 20px 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background: #0f3460;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 8px 12px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: #1a5276;
+            color: #fff;
+            border-color: #1a5276;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .article-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .article-card {
+            background: #16213e;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .article-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.7);
+        }
+
+        .article-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .article-content {
+            padding: 15px;
+        }
+
+        .article-content h3 {
+            margin: 0 0 10px;
+            font-size: 1.5rem;
+            color: #e94560;
+        }
+
+        .article-content p {
+            margin: 0;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #d3d3d3;
+        }
+
+        footer {
+            background: #0f3460;
+            color: #fff;
+            text-align: center;
+            padding: 15px 10px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Space Articles - Explore the Cosmos</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="articles.html">Articles</a>
+        <a href="#space">Space</a>
+    </nav>
+
+    <div class="container">
+        <div class="article-grid">
+            <div class="article-card">
+                <img src="https://via.placeholder.com/400x200?text=Future+Space+Exploration" alt="Future Space Exploration" class="article-image">
+                <div class="article-content">
+                    <h3>The Future of Space Exploration</h3>
+                    <p>Discover upcoming missions and groundbreaking advancements in space technology.</p>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <img src="https://via.placeholder.com/400x200?text=James+Webb+Telescope" alt="James Webb Telescope" class="article-image">
+                <div class="article-content">
+                    <h3>James Webb Space Telescope</h3>
+                    <p>Revolutionizing our understanding of the universe with cutting-edge observations.</p>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <img src="https://via.placeholder.com/400x200?text=Colonizing+Mars" alt="Colonizing Mars" class="article-image">
+                <div class="article-content">
+                    <h3>Colonizing Mars</h3>
+                    <p>Challenges and possibilities of making humanity a multi-planetary species.</p>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <img src="https://via.placeholder.com/400x200?text=Asteroid+Mining" alt="Asteroid Mining" class="article-image">
+                <div class="article-content">
+                    <h3>Asteroid Mining: The Next Gold Rush</h3>
+                    <p>Unveiling the potential of mining valuable resources from asteroids.</p>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <img src="https://via.placeholder.com/400x200?text=Exoplanets" alt="Exoplanets" class="article-image">
+                <div class="article-content">
+                    <h3>Searching for Exoplanets</h3>
+                    <p>How scientists are hunting for habitable worlds beyond our solar system.</p>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <img src="https://via.placeholder.com/400x200?text=Space+Tourism" alt="Space Tourism" class="article-image">
+                <div class="article-content">
+                    <h3>The Rise of Space Tourism</h3>
+                    <p>Exploring the commercial possibilities of taking humans to space.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 ArticleHub. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to ArticleHub - A place for amazing articles!">
+    <meta name="author" content="Sahil">
+    <title>ArticleHub - Welcome</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="slideshow.css">
+    
+        
+    
+</head>
+<body>
+    <header>
+         <nav>
+            <a href="about.html">About</a>
+            <a href="articles.html">Articles</a>
+            <a href="space.html">Space</a>
+            <a href="#technology">Technology</a>
+            <a href="#science">Science</a>
+            <a href="#health">Health</a>
+            <a href="#environment">Environment</a>
+            <a href="#lifestyle">Lifestyle</a>
+            <a href="#business">Business</a>
+            <a href="#entertainment">Entertainment</a>
+            <a href="#sports">Sports</a>
+            <a href="#history">History</a>
+            <a href="#politics">Politics</a>
+            <a href="#finance">Finance</a>
+            <a href="#food">Food</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Slideshow Section -->
+        <section id="slideshow">
+            <h2>Featured Articles</h2>
+            <div class="slideshow-container">
+                <div class="slide">
+                    <img src="space.jpg" alt="Space Article">
+                    <h3>Exploring the Wonders of Space</h3>
+                    <p>Discover the latest breakthroughs in space exploration and astronomy.</p>
+                </div>
+                <div class="slide">
+                    <img src="technology.jpg" alt="Technology Article">
+                    <h3>The Future of AI and Technology</h3>
+                    <p>How artificial intelligence is shaping the world of tomorrow.</p>
+                </div>
+                <div class="slide">
+                    <img src="health.jpg" alt="Health Article">
+                    <h3>Staying Healthy in 2025</h3>
+                    <p>Top tips and research to keep your mind and body in shape.</p>
+                </div>
+                <!-- Add more slides as needed -->
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+            <div class="dots">
+                <span class="dot" onclick="showSlide(1)"></span>
+                <span class="dot" onclick="showSlide(2)"></span>
+                <span class="dot" onclick="showSlide(3)"></span>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>
+                Welcome to <strong>ArticleHub</strong>, where we provide top-notch articles 
+                on a variety of topics. Our mission is to inform, educate, and entertain!
+            </p>
+            <blockquote>
+                "The pen is mightier than the sword." - Edward Bulwer-Lytton
+            </blockquote>
+        </section>
+
+        <section id="article">
+            <h2>Featured Articles</h2>
+            <figure>
+                <img src="article-image.jpg" alt="A beautiful article" width="300">
+                <figcaption>Stay tuned for our latest articles!</figcaption>
+            </figure>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Article Title</th>
+                        <th>Author</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Understanding Quantum Mechanics</td>
+                        <td>Sahil</td>
+                        <td><time datetime="2025-01-28">January 28, 2025</time></td>
+                    </tr>
+                    <tr>
+                        <td>The Future of Web Development</td>
+                        <td>Alisha</td>
+                        <td><time datetime="2025-01-15">January 15, 2025</time></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="/submit" method="post">
+                <fieldset>
+                    <legend>Get in Touch</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+                    <br>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <aside>
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="https://www.nasa.gov" target="_blank">NASA</a></li>
+            <li><a href="https://www.isro.gov.in" target="_blank">ISRO</a></li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p>&copy; <time datetime="2025">2025</time> ArticleHub. All rights reserved.</p>
+        <p>Powered by <abbr title="HyperText Markup Language">HTML</abbr>.</p>
+    </footer>
+</body>
+</html>

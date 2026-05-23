@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles - ArticleHub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background: #444;
+            padding: 10px 0;
+        }
+        nav button {
+            background: #555;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        nav button:hover {
+            background: #777;
+        }
+        section {
+            display: none;
+            padding: 20px;
+        }
+        section.active {
+            display: block;
+        }
+        .category-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+            text-align: center;
+        }
+        .article-card {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .article-card h3 {
+            margin: 0 0 10px;
+        }
+        .article-card p {
+            margin: 0;
+            color: #555;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Articles - Explore Your Favorite Topics</h1>
+    </header>
+
+    <!-- Navigation Buttons -->
+    <nav>
+        <button onclick="showCategory('space')">Space</button>
+        <button onclick="showCategory('technology')">Technology</button>
+        <button onclick="showCategory('health')">Health</button>
+        <button onclick="showCategory('science')">Science</button>
+        <button onclick="showCategory('environment')">Environment</button>
+        <button onclick="showCategory('lifestyle')">Lifestyle</button>
+        <button onclick="showCategory('business')">Business</button>
+        <button onclick="showCategory('entertainment')">Entertainment</button>
+        <button onclick="showCategory('sports')">Sports</button>
+        <button onclick="showCategory('history')">History</button>
+        <button onclick="showCategory('politics')">Politics</button>
+        <button onclick="showCategory('finance')">Finance</button>
+        <button onclick="showCategory('food')">Food</button>
+    </nav>
+
+    <!-- Articles Sections -->
+    <section id="space" class="category">
+        <div class="category-title">Space Articles</div>
+        <div class="article-card">
+            <h3>The Future of Space Exploration</h3>
+            <p>Discover upcoming missions and groundbreaking advancements in space technology.</p>
+        </div>
+    </section>
+
+    <section id="technology" class="category">
+        <div class="category-title">Technology Articles</div>
+        <div class="article-card">
+            <h3>AI in Everyday Life</h3>
+            <p>How artificial intelligence is transforming industries worldwide.</p>
+        </div>
+    </section>
+
+    <section id="health" class="category">
+        <div class="category-title">Health Articles</div>
+        <div class="article-card">
+            <h3>Wellness Tips for a Healthy Lifestyle</h3>
+            <p>Simple habits to boost your physical and mental health.</p>
+        </div>
+    </section>
+
+    <section id="science" class="category">
+        <div class="category-title">Science Articles</div>
+        <div class="article-card">
+            <h3>Quantum Computing Explained</h3>
+            <p>A beginner-friendly guide to understanding quantum mechanics in technology.</p>
+        </div>
+    </section>
+
+    <section id="environment" class="category">
+        <div class="category-title">Environment Articles</div>
+        <div class="article-card">
+            <h3>Sustainable Living</h3>
+            <p>Learn how to make eco-friendly choices to protect our planet.</p>
+        </div>
+    </section>
+
+    <section id="lifestyle" class="category">
+        <div class="category-title">Lifestyle Articles</div>
+        <div class="article-card">
+            <h3>Minimalism: The Key to Happiness</h3>
+            <p>Discover how simplifying your life can bring peace and fulfillment.</p>
+        </div>
+    </section>
+
+    <section id="business" class="category">
+        <div class="category-title">Business Articles</div>
+        <div class="article-card">
+            <h3>The Rise of Startups</h3>
+            <p>How startups are shaping the future of the business world.</p>
+        </div>
+    </section>
+
+    <section id="entertainment" class="category">
+        <div class="category-title">Entertainment Articles</div>
+        <div class="article-card">
+            <h3>Top Movies of the Decade</h3>
+            <p>A look back at the most influential movies of the past ten years.</p>
+        </div>
+    </section>
+
+    <section id="sports" class="category">
+        <div class="category-title">Sports Articles</div>
+        <div class="article-card">
+            <h3>Greatest Moments in Sports History</h3>
+            <p>Relive some of the most iconic moments in sports.</p>
+        </div>
+    </section>
+
+    <section id="history" class="category">
+        <div class="category-title">History Articles</div>
+        <div class="article-card">
+            <h3>Ancient Civilizations</h3>
+            <p>Uncover the secrets of the world's oldest civilizations.</p>
+        </div>
+    </section>
+
+    <section id="politics" class="category">
+        <div class="category-title">Politics Articles</div>
+        <div class="article-card">
+            <h3>The Changing Face of Politics</h3>
+            <p>How political systems are evolving in the modern era.</p>
+        </div>
+    </section>
+
+    <section id="finance" class="category">
+        <div class="category-title">Finance Articles</div>
+        <div class="article-card">
+            <h3>Personal Finance Tips</h3>
+            <p>Smart strategies to manage your money effectively.</p>
+        </div>
+    </section>
+
+    <section id="food" class="category">
+        <div class="category-title">Food Articles</div>
+        <div class="article-card">
+            <h3>The Art of Cooking</h3>
+            <p>Master the basics of cooking with these simple recipes.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ArticleHub. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showCategory(category) {
+            const sections = document.querySelectorAll("section");
+            sections.forEach(section => {
+                section.classList.remove("active");
+            });
+            document.getElementById(category).classList.add("active");
+        }
+
+        // Set default active category
+        showCategory('space');
+    </script>
+</body>
+</html>
